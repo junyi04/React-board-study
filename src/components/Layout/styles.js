@@ -5,4 +5,11 @@ export const layout = css`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+`;
+
+export const mainContianer = css`
+  width: 60%;
+  height: calc(100vh - 60px);
+  box-sizing: border-box;
 `;
