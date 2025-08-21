@@ -12,13 +12,11 @@ export const container = css`
 export const box = css`
   width: 400px;
   height: 450px;
-  border: 1px solid #dbdbdb;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   padding: 30px;
-  border-radius: 8px;
   gap: 25px;
 `;
 
@@ -29,36 +27,9 @@ export const inputBox = css`
   align-items: center;
   justify-content: center;
   gap: 10px;
-
-  & > input {
-    outline: none;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    padding: 10px 15px;
-    font-size: 16px;
-    color: #333;
-    box-sizing: border-box;
-  }
 `;
 
-export const signInBtnBox = css`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 10px;
-
-  & > button {
-    cursor: pointer;
-    width: 100%;
-    padding: 10px 30px;
-    border: none;
-    border-radius: 8px;
-    font-size: 14px;
-  }
-`;
-
-export const oauthBtnBox = css`
+export const btnBox = css`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,6 +47,18 @@ export const oauthBtnBox = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    background-color: #1E2B67;
+    color: #fff;
+  }
+`;
+
+export const errorBox = css`
+  & > ul {
+    list-style: disc;
+
+    & > li {
+      color: #dc3545;
+      font-size: 13px;
+    }
   }
 `;
